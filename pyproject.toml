@@ -1,0 +1,18 @@
+[project]
+name = "recon-engine"
+version = "0.1.0"
+description = "Reconcile a ledger against a bank statement with pandas: exact and fuzzy matching, validation rules, Excel report."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["pandas>=2.2", "openpyxl>=3.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["recon*"]
